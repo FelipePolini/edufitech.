@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1.inicio {
+    margin-top: -5px;
+    color: #f64c72;
+    font-size: 37px;
+    font-style: oblique;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #2f2fa2;
+    z-index: 1000;
+    height: 15vh;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 315px;
+}
+
+button.educacao_sobre_imposto{
+    margin-top: -5px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #f64c72;
+    background-color: #2f2fa2;
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+
+
+
+.nav_link {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    border-width: 6px;
+}
+.nav_link:hover {
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 7px;
+    background-color: #f64c72;
+    font-size: 20px;
+    border: none;
+}
+
+.active {
+    border-color: #f64c72;
+}
+
+button.login {
+    margin-top: -5px;
+    font-size: 19px;
+    background-color: #f64c72;
+    color: #ffffff;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #f64c72;
+    border-width: 2px;
+    padding: 5px 10px;
+    width: 90px;
+}
+
+.login:hover {
+    background-color: #2f2fa2;
+    color: #f64c72;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+
+.section {
+    height: 200vh;
+    display:flow-root;
+    align-items:first center;
+    justify-content:center;
+    text-align: center;
+}
+
+.section:nth-child(1) {
+    background: #2f2fa24c;
+}
+
+.section:nth-child(2) {
+    background: #2f2fa2;
+    color: #ffffff;
+    text-align: left;
+    height: 20vh;
+}
+
+
+.heading {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header_content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_list.active {
+        display: flex;
+    }
+
+    .header_content {
+        padding: 0 15px;
+    }
+
+    .nav_link {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .login {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
