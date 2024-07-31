@@ -16,6 +16,15 @@ h1.inicio {
     font-style: oblique;
 }
 
+
+div.texto_sobre-nos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:center;
+    font-size: 18px;
+}
+
 ul {
     list-style: none;
 }
@@ -68,6 +77,8 @@ button.nav_conteudo:hover{
     padding: 5px 10px;
     cursor:pointer;
 }
+
+
 
 .nav_list {
     display: flex;
