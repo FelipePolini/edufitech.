@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Front.css">
+    <link rel="shortcut icon" href="assets/android-chrome-192x192.png" type="image/x-icon">
     <script defer src="front.js"></script>
     <title>EduFiTech</title>
 </head>
@@ -13,21 +14,19 @@
             <a href="#incio">
                 <h1 class="inicio">EduFiTech.</h1>
             </a>
-            <nav class="nav"> 
+            <nav class="nav">                    
                 <ul class="nav_list">
-                    <li>
+                    <li class="nav_item">
+                        <a href="#sobre-nos" class="nav_link active"><button class="nav_conteudo">Sobre Nós</button></a>
                     </li>
                     <li class="nav_item">
-                        <a href="#sobre-nos" class="nav_link active">Sobre Nós</a>
+                        <a href="#educacao" class="nav_link"><button class="nav_conteudo">Educação</button></a>
                     </li>
                     <li class="nav_item">
-                        <a href="#educacao" class="nav_link">Educação</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contato" class="nav_link">Contato</a>
+                        <a href="#contato" class="nav_link"><button class="nav_conteudo">Contato</button></a>
                     </li>
                     <li>
-                        <a href="login/index.html"><button class="login">Entrar</button></a>
+                    <a href="login/index.html"><button class="login">Entrar</button></a>
                     </li>
                 </ul>
             </nav>
@@ -35,13 +34,42 @@
     </header>
     <main class="main">
         <section class="section" id="sobre-nos">
-            <h2 class="heading">Sobre Nós</h2>
+            <br><br><br><br><br><br><h2 class="heading">Sobre Nós</h2>
         </section>
         <section class="section" id="educacao">       
-            <h2 class="heading">Educação</h2>
+            <br><br><br><br><br><h2 class="heading">Educação</h2>
+            <h3>Conheça aqui alguns dos assuntos do nosso cotidiano:</h3>
+            <div class="container_card">
+                <div class="card">
+                        <img src="assets/imposto.jpeg" alt="imagem imposto">
+                            <h1>Imposto</h1>
+                            <h2>Descrição</h2>
+                            <a href="pagina_imposto.html"><button>Saber mais</button></a>
+                </div>
+                <div class="card">
+                        <img src="assets/educacao_financeira.jpeg" alt="imagem primeiros socorros">
+                            <h1>Educação Financeira</h1>
+                            <h2>Descrição</h2>
+                            <a href="pagina_educacao_financeira.html"><button>Saber mais</button></a>
+                </div>
+                <div class="card">
+                    <img src="assets/primeiros_socorros.jpg" alt="imagem primeiros socorros">
+                        <h1>Primeiros Socorros</h1>
+                        <h2>Descrição</h2>
+                        <a href="pagina_primeiros_socorros.html"><button>Saber mais</button></a>
+            </div>
+            <div class="card">
+                <img src="assets/aprenda_estudar.avif" alt="imagem primeiros socorros">
+                    <h1>Aprenda a Estudar</h1>
+                    <h2>Descrição</h2>
+                    <a href="pagina_aprenda_estudar.html"><button>Saber mais</button></a>
+        </div>
+            </div>
         </section>
         <section class="section" id="contato">
             <h2 class="heading">Contato</h2>
+            <h4 class="">Tel:   (11) 88888888888</h4>
+            <h4 class="">Email: edufitech@gmail.com</h4>
         </section>
     </main>
 

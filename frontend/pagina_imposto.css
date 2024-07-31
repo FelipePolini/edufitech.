@@ -42,7 +42,12 @@ body {
     padding: 0 30px;
 }
 
-button.nav_conteudo{
+.nav_list {
+    display: flex;
+    column-gap: 355px;
+}
+
+button.educacao_sobre_imposto{
     margin-top: -5px;
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
@@ -55,37 +60,19 @@ button.nav_conteudo{
     padding: 5px 10px;
 }
 
-button.nav_conteudo:hover{
-    margin-top: -5px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #f64c72;
-    background-color: #f64c72;
-    border-width: 2px;
-    border-radius: 7px;
-    padding: 5px 10px;
-    cursor:pointer;
-}
 
-.nav_list {
-    display: flex;
-    column-gap: 166px;
-}
 
 .nav_link {
     color: rgba(255, 255, 255, 1);
-    font-size: 15px;
-    transition: all 0.0s;
+    font-size: 20px;
+    border-width: 6px;
 }
 .nav_link:hover {
     color: #ffffff;
-    border-color: #f64c72;
     border-style: solid;
     border-radius: 7px;
     background-color: #f64c72;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
 }
 
@@ -119,57 +106,7 @@ button.login {
     padding: 0 30px;
 }
 
-.container_card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-}
 
-
-
-.card {
-    background-color: #2f2fa2;
-    width: 400px;
-    height: 260px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #7d7d7daa;
-  }
-  .card img {
-    width: 100%;
-    height: 170px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 10px;
-  }
-
-  .card div {
-    height: 50%;
-  }
-  .card h1 {
-    font-size: 1.2rem;
-    color: #f64c72;
-  }
-  .card h2 {
-    font-size: .9rem;
-    color: #bdbdbdaa;
-  }
-  .card button {
-    background-color: #f64c72;
-    height: 30px;
-    border: solid;
-    border-color: #f64c72;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-  .card button:hover {
-    background-color: #2f2fa2;
-    cursor: pointer;
-    border-color: #f64c72;
-  }
 
 .section {
     height: 200vh;
@@ -184,16 +121,12 @@ button.login {
 }
 
 .section:nth-child(2) {
-    background: #2f2fa232;
-    height: 200vh;
-}
-
-.section:nth-child(3) {
     background: #2f2fa2;
     color: #ffffff;
-    text-align:left;
+    text-align: left;
     height: 20vh;
 }
+
 
 .heading {
     font-size: 2rem;
