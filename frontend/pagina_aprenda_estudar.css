@@ -44,7 +44,7 @@ body {
 
 .nav_list {
     display: flex;
-    column-gap: 355px;
+    column-gap: 250px;
 }
 
 button.educacao_sobre_imposto{
@@ -60,7 +60,47 @@ button.educacao_sobre_imposto{
     padding: 5px 10px;
 }
 
+div.botoes_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.botoes{
+    margin: 5px;
+    margin-top: auto;
+}
+
+div.botoes_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.botoes{
+    margin: 5px;
+    margin-top: auto;
+}
+
+button.voltar{
+    margin-top: -5px;
+    font-size: 19px;
+    background-color: #f64c72;
+    color: #ffffff;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #f64c72;
+    border-width: 2px;
+    padding: 5px 10px;
+    width: 90px;
+}
+
+button.voltar:hover{
+    background-color: #2f2fa2;
+    color: #f64c72;
+    font-size: 19px;
+    cursor: pointer;
+}
 
 .nav_link {
     color: rgba(255, 255, 255, 1);
@@ -127,6 +167,59 @@ button.login {
     height: 20vh;
 }
 
+button.contato{
+    width: 100%;
+    background-color: #2f2fa2;
+    border: solid;
+    border-width: 2px;
+    border-color: #f64c72;
+    color: #ffffff;
+}
+
+button.contato:hover{
+    background-color: #f64c72;
+    border-color: #f64c72;
+}
+
+button.github{
+    background-color: #2f2fa2;
+    border: solid;
+    border-width: 2px;
+    height: 34px;
+    border-color: #2f2fa2;
+    border-radius: 10px;
+}
+
+button.github:hover{
+    background-color: #f64c72;
+    border-color: #f64c72;
+
+}
+
+a.email{
+    text-decoration:underline;
+}
+a.email:hover{
+    color: #f64c72;
+}
+
+h2.heading{
+    text-align: center;
+    margin-top: 2px;
+}
+
+div.informacao_contato{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.informacao_conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
 
 .heading {
     font-size: 2rem;

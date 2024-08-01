@@ -9,9 +9,12 @@
     <title>EduFiTech</title>
 </head>
 <body>
+    <article>
+        <button class="topo" onclick="voltarTopo();"><img src="assets/icons8-triângulo-48.png" alt="triangulo_topo" width="30px"></button>
+    </article>
     <header class="header">
         <div class="header_content">
-            <a href="#incio">
+            <a href="front.html">
                 <h1 class="inicio">EduFiTech.</h1>
             </a>
             <nav class="nav">                    
@@ -32,6 +35,8 @@
             </nav>
         </div>
     </header>
+   
+
     <main class="main">
         <section class="section" id="sobre-nos">
             <br><br><br><br><br><br><h2 class="heading">Sobre Nós</h2>
@@ -71,17 +76,39 @@
             </div>
         </section>
         <section class="section" id="contato">
-            <h2 class="heading">Contato</h2>
-            <h4 class="">Tel:   (11) 88888888888</h4>
-            <h4 class="">Email: edufitech@gmail.com</h4>
+            
+            <div class="informacao_contato">
+                <button class="contato">
+                    <h2 class="heading">Contato</h2>
+                </button>
+                    <div class="informacao_conteudo">
+                        <div class="informacao_texto">                               
+                            <h4 class="email">Email: <a href="https://mail.google.com/mail/u/2/#inbox" class="email">contato.edufitech@gmail.com</a></h4>                
+                        </div>
+                        <div class="informacao_texto">
+                            <a href="https://github.com/FelipePolini/edufitech."><button class="github"><img src="assets/icons8-github-48.png" alt="icone_github" width="30px" height="30px"></button></a>
+                        </div>
+                    </div>
+                
+            </div>
         </section>
     </main>
 
-    <!-- <script>
-        document.querySelector('.menu-btn').addEventListener('click', () => {
-            document.querySelector('.nav_list').classList.toggle('active');
-        });
-    </script> -->
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.topo')
+            scroll.classList.toggle('active', window.scrollY > 450)
+
+            
+        })
+
+        function voltarTopo(){
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
