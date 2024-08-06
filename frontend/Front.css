@@ -17,13 +17,15 @@ h1.inicio {
 }
 
 
-div.texto_sobre-nos{
+div.conteudo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align:center;
-    font-size: 18px;
+    justify-content: space-evenly;
 }
+
+
+
 
 ul {
     list-style: none;
@@ -115,7 +117,7 @@ button.nav_conteudo:hover{
 
 .nav_list {
     display: flex;
-    column-gap: 165px;
+    column-gap: 5px;
 }
 
 .nav_link {
@@ -242,17 +244,13 @@ button.login {
 
 button.contato{
     width: 100%;
-    background-color: #2f2fa2;
+    background-color: #f64c72;
     border: solid;
     border-width: 2px;
     border-color: #f64c72;
     color: #ffffff;
 }
 
-button.contato:hover{
-    background-color: #f64c72;
-    border-color: #f64c72;
-}
 
 button.github{
     background-color: #2f2fa2;
@@ -301,16 +299,23 @@ div.informacao_conteudo{
 }
 
 @media (max-width: 768px) {
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .header_content {
         flex-direction: column;
         height: auto;
     }
 
     .nav_list {
-        display: none;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         width: 100%;
         text-align: center;
+        padding: 10px;
     }
 
     .nav_list.active {
