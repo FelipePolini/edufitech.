@@ -33,7 +33,11 @@ ul {
 
 body {
     font-family: 'Inter', sans-serif;
+    background-image: url(assets/livros-com-cerebro-em-estilo-de-arte-digital-para-o-dia-da-educacao.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
 }
+
 
 .topo{
     outline: none;

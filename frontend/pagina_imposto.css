@@ -10,10 +10,22 @@ a {
 }
 
 h1.inicio {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
     margin-top: -5px;
     color: #f64c72;
     font-size: 37px;
     font-style: oblique;
+}
+
+h1.heading{
+    font-size: 40px;
+    font-weight: 700px;
+    font-style:normal;
+    word-spacing: 8px;
+    text-align: center;
+    margin: 20px 50px 20px;
+    text-transform:uppercase;
 }
 
 ul {
@@ -21,7 +33,31 @@ ul {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+.video_imposto1{
+    margin: 50px 10px 0px;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0px 50px 0px;
+}
+
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: 700px;
+    font-style:italic;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-align: justify;
+    margin: 20px 50px 20px;
+    text-transform:none;
 }
 
 .topo{
@@ -182,7 +218,7 @@ button.login {
 
 
 .section {
-    height: 200vh;
+    height: 500vh;
     display:flow-root;
     align-items:first center;
     justify-content:center;
