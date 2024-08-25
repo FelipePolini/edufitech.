@@ -20,3 +20,4 @@ window.addEventListener('scroll', () => {
 document.querySelector('.menu-btn').addEventListener('click', () => {
     document.querySelector('.nav_list').classList.toggle('active');
 });
+

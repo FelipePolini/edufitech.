@@ -53,7 +53,7 @@ function validar() {
 
         if (!cpfValido) {
             resultado.textContent = "CPF inválido! Por favor, insira um CPF válido.";
-            resultado.style.color = "red";
+            resultado.style.color = "white";
             
             document.getElementById('cpf').value = '';
             

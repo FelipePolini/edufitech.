@@ -39,7 +39,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
     })
     .catch(error => {
         console.error('Erro:', error);
-        message.style.color = 'red';
+        message.style.color = 'white';
         message.textContent = 'Ocorreu um erro. Tente novamente.';
     });
 
@@ -65,7 +65,7 @@ document.getElementById('resetPasswordForm').addEventListener('submit', function
             message.style.color = 'green';
             message.textContent = 'Senha alterada com sucesso!';
         } else {
-            message.style.color = 'red';
+            message.style.color = 'white';
             message.textContent = 'Não foi possível alterar a senha. Tente novamente.';
         }
     })

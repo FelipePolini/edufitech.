@@ -6,27 +6,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #9ea7d2aa;
+    background-color: #F0F0F0;
 }
 
 .login-container {
-    background-color: #2f2fa2;
+    background-color: #2980B9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px #f64c72;
+    box-shadow: 0 0 10px #1ABC9C;
     width: 300px;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
-    color:#f64c72
+    color:#ffffff;
 }
 
 .input-group {
     margin-bottom: 10px;
     text-align: left;
-    color:#f64c72
+    color:#ffffff;
 }
 
 .input-group label {
@@ -37,9 +37,8 @@ h2 {
 .input-group input {
     width: 96%;
     padding: 5px;
-    border: 1px solid #000000;
+    border: 1px solid #1ABC9C;
     border-radius: 4px;
-
 }
 
 #MostrarSenha {
@@ -54,10 +53,14 @@ h2 {
     font-size: small;
 }
 
+#MostrarSenha:hover{
+    color: #2C3E50;
+}
+
 button {
     width: 100%;
     padding: 10px;
-    background-color: #f64c72;
+    background-color: #85C1E9;
     color: white;
     border: none;
     border-radius: 4px;
@@ -67,49 +70,49 @@ button {
 }
 
 .entrar{
-    border: 2px solid #f64c72;
+    border: 2px solid #2980B9;
 }
 
 button.entrar:hover {
-    background-color: #2f2fa2;
-    border: 2px solid #f64c72;
+    background-color: #1ABC9C;
+    border: 2px solid #85C1E9;
 }
 
 #EsqueciSenhaBtn {
-    background-color: transparent;
+    background-color: #1ABC9C;
     color: #ffffff;
-    border: 1px solid #f64c72;
+    border: 2px solid #85C1E9;
     margin-top: 30px;
     margin-bottom: 15px;
     text-align: left;
     width: 50%;
     font-size: small;
+    text-align: center;
 }
 
 #EsqueciSenhaBtn:hover {
-    background-color: #f64c72;
+    background-color: #85C1E9;
     color: #ffffff;
 #message {
     margin-top: 15px;
-    color: rgb(255, 0, 0);
-}}
+color: #ffffff;}}
 
 #CriarContaBtn{
-    background-color: transparent;
+    background-color: #1ABC9C;
     color: #ffffff;
-    border: 1px solid #f64c72;
+    border: 2px solid #85C1E9;
     margin-top: 10px;
-    width: 40%;
+    width: 48%;
     font-size: small;
   
    
 }
 #CriarContaBtn:hover {
-    background-color: #f64c72;
+    background-color: #85C1E9;
     color: #ffffff;
 #message {
     margin-top: 15px;
-    color: rgb(255, 0, 0);
+    color:#ffffff
   
 }
 }
