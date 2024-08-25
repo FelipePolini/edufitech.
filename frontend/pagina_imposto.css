@@ -137,7 +137,7 @@ button.voltar {
     border-style: solid;
     border-color: #2980B9; /* Verde Escuro (ajustado) */
     border-width: 2px;
-    padding: 5px 10px;
+    padding: 5px 19px;
     width: 90px;
 }
 
@@ -176,7 +176,7 @@ button.login {
     border-style: solid;
     border-color: #1ABC9C; /* Verde Escuro (ajustado) */
     border-width: 2px;
-    padding: 5px 10px;
+    padding: 5px 18px;
     width: 90px;
 }
 
@@ -230,6 +230,75 @@ h1.heading{
     background: #FFFFFF; /* Azul Claro (ajustado) */
 }
 
+main .quiz{
+    background-color: #008CCC;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 290px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .spnQtd {
+    text-align: end;
+    color: #FFFFFF;
+  }
+
+  .question{
+    color: #FFFFFF;
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #85C1E9;
+    color: white;
+  }
+  
+  button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1ABC9C;
+    color: white;
+    border: solid 2px #1ABC9C;
+  }
+
+  button:hover{
+    border: solid 2px #1ABC9C;
+    background-color: #85C1E9;
+  }
+  
+  .finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .finish button {
+    text-align: center;
+  }
 
 button.github {
     background-color: #2980B9; /* Azul Escuro (ajustado) */
