@@ -9,6 +9,16 @@
     <title>EduFiTech</title>
 </head>
 <body>
+
+    <!-- Imagem inicial -->
+    <div class="intro-image" id="introImage">
+        <h1 class="intro-title" style="color: white; font-size: 3rem;">Bem-vindo à EduFiTech.</h1>
+        <p class="intro-subtitle">Preparamos você para o futuro com educação de qualidade</p>
+        <a href="#sobre-nos" class="intro-scroll">Role para descobrir mais</a>
+    </div>
+
+   
+
     <article>
         <button class="topo" onclick="voltarTopo();"><img src="assets/icons8-triângulo-48.png" alt="triangulo_topo" width="30px"></button>
     </article>
@@ -17,7 +27,8 @@
             <a href="front.html">
                 <h1 class="inicio">EduFiTech.</h1>
             </a>
-            <nav class="nav">                    
+            <nav class="nav">
+                                  
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="#sobre-nos" class="nav_link active"><button class="nav_conteudo">Sobre Nós</button></a>
@@ -35,16 +46,13 @@
             </nav>
         </div>
     </header>
-   
-
     <main class="main">
         <section class="section" id="sobre-nos">
-            <br><br><br><br><br><br><h2 class="heading">Sobre Nós</h2>
+            <h2 class="heading">SOBRE NÓS</h2>
 
             <div class="conteudo">
                 <div class="informacao_conteudo">
-                 <video src="assets/Como estudar de verdade (e finalmente aprender!).mp4" alt="video" controls width="500px" poster="assets/capa.jpg">
-                    
+                 <video src="assets/Como estudar de verdade (e finalmente aprender!).mp4" alt="video" controls width="800px" poster="assets/capa.jpg">
                  </video>
                 </div>
                 <div class="informacao_conteudo">
@@ -54,68 +62,68 @@
             </div>
         </section>
         <section class="section" id="educacao">       
-            <br><br><br><br><br><br><h2 class="heading">Educação</h2>
+            <h2 class="heading">EDUCAÇÃO</h2>
             <h3>Conheça aqui alguns dos assuntos do nosso cotidiano:</h3>
             <div class="container_card">
                 <div class="card">
                         <img src="assets/imposto.jpeg" alt="imagem imposto">
                             <h1>Imposto</h1>
-                            <h2>Descrição</h2>
                             <a href="pagina_imposto.html"><button>Saber mais</button></a>
                 </div>
                 <div class="card">
                         <img src="assets/educacao_financeira.jpeg" alt="imagem primeiros socorros">
                             <h1>Educação Financeira</h1>
-                            <h2>Descrição</h2>
                             <a href="pagina_educacao_financeira.html"><button>Saber mais</button></a>
                 </div>
                 <div class="card">
                     <img src="assets/primeiros_socorros.jpg" alt="imagem primeiros socorros">
                         <h1>Primeiros Socorros</h1>
-                        <h2>Descrição</h2>
                         <a href="pagina_primeiros_socorros.html"><button>Saber mais</button></a>
-            </div>
+                </div>
             <div class="card">
                 <img src="assets/aprenda_estudar.avif" alt="imagem primeiros socorros">
                     <h1>Aprenda a Estudar</h1>
-                    <h2>Descrição</h2>
                     <a href="pagina_aprenda_estudar.html"><button>Saber mais</button></a>
+            </div>
         </div>
-            </div>
         </section>
-        <section class="section" id="contato">
-            
-            <div class="informacao_contato">
-                <button class="contato">
-                    <h2 class="heading">Contato</h2>
-                </button>
-                    <div class="informacao_conteudo">
-                        <div class="informacao_texto">                               
-                            <h4 class="email">Email: <a href="https://mail.google.com/mail/u/2/#inbox" class="email">contato.edufitech@gmail.com</a></h4>                
-                        </div>
-                        <div class="informacao_texto">
-                            <a href="https://github.com/FelipePolini/edufitech."><button class="github"><img src="assets/icons8-github-48.png" alt="icone_github" width="30px" height="30px"></button></a>
-                        </div>
-                    </div>
-                
-            </div>
-        </section>
+        
     </main>
+    <footer class="footer" id="contato">
+        <h2 class="heading">CONTATO</h2>
+        <div class="informacao_conteudo">
+            <div class="informacao_texto">                               
+                <h4 class="email">Email: <a href="https://mail.google.com/mail/u/2/#inbox" class="email">contato.edufitech@gmail.com</a></h4>                
+            </div>
+            <div class="informacao_texto">
+                <a href="https://github.com/FelipePolini/edufitech."><button class="github"><img src="assets/icons8-github-48.png" alt="icone_github" width="30px" height="30px"></button></a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         window.addEventListener('scroll', function(){
-            let scroll = document.querySelector('.topo')
-            scroll.classList.toggle('active', window.scrollY > 450)
-
+            let scroll = document.querySelector('.topo');
+            scroll.classList.toggle('active', window.scrollY > 450);
             
-        })
+            let introImage = document.getElementById('introImage');
+            if (window.scrollY > 50) {
+                introImage.classList.add('hidden');
+            }
+        });
 
         function voltarTopo(){
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                })
-            }
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        document.querySelector('.intro-scroll').addEventListener('click', function() {
+            document.getElementById('sobre-nos').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

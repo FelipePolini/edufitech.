@@ -10,10 +10,22 @@ a {
 }
 
 h1.inicio {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
     margin-top: -5px;
-    color: #f64c72;
+    color: rgba(163, 228, 215, 0.8); /* Azul Escuro (ajustado) */
     font-size: 37px;
     font-style: oblique;
+}
+
+h1.heading {
+    font-size: 40px;
+    font-weight: 700;
+    word-spacing: 8px;
+    text-align: center;
+    margin: 20px 50px 20px;
+    text-transform: uppercase;
+    color: #2C3E50; /* Cinza Escuro (ajustado) */
 }
 
 ul {
@@ -22,47 +34,71 @@ ul {
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #F0F0F0; /* Cinza Claro */
+    color: #2C3E50;
 }
 
-.topo{
+.video_imposto1 {
+    margin: 50px 10px 0px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0px 50px 0px;
+    color: #2980B9; /* Azul Escuro (ajustado) */
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #2C3E50; /* Cinza Escuro (ajustado) */
+    font-weight: 600; /* Ajustado para consistência */
+    font-style: italic;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-align: justify;
+    margin: 20px 50px 20px;
+}
+
+.topo {
     outline: none;
     border-width: 2px;
     border: solid;
-    border-color: #f64c72;
-    background-color: #ffffff;
-    width: 50px;
-    height: 50px;
+    border-color: #1ABC9C; /* Verde Escuro */
+    background-color: #FFFFFF; /* Branco */
+    width: 60px;
+    height: 60px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 0px;
+    right: 10px;
     box-shadow: 0 1px 6px 2px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-    bottom: 30px;
+    bottom: 97px;
     z-index: 999;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
-  
 }
 
-.topo.active{
+.topo.active {
     opacity: 1;
     visibility: visible;
 }
 
-.topo img{
-    background-color: #fff;
+.topo img {
+    background-color: #FFFFFF; /* Branco */
 }
 
 .header {
     position: fixed;
     width: 100%;
-    background-color: #2f2fa2;
+    background-color: rgba(41, 127, 185, 0.91); /* Azul Escuro Translúcido (ajustado) */
     z-index: 1000;
-    height: 15vh;
+    height: 10vh;
 }
 
 .header_content {
@@ -70,108 +106,82 @@ body {
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    height: 100px;
+    height: 75px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 27px;
 }
 
 .nav_list {
     display: flex;
-    column-gap: 210px;
+    column-gap: 250px;
 }
 
-button.educacao_sobre_primeiro_socorros{
-    margin-top: -5px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #f64c72;
-    background-color: #2f2fa2;
-    border-width: 2px;
-    border-radius: 7px;
-    padding: 5px 10px;
-}
-
-div.botoes_principal{
+div.botoes_principal {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.botoes{
+.botoes {
     margin: 5px;
     margin-top: auto;
 }
 
-div.botoes_principal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.botoes{
-    margin: 5px;
-    margin-top: auto;
-}
-
-button.voltar{
+button.voltar {
     margin-top: -5px;
     font-size: 19px;
-    background-color: #f64c72;
-    color: #ffffff;
+    background-color: #85C1E9; /* Verde Escuro (ajustado) */
+    color: #2C3E50;
     border-radius: 7px;
     border-style: solid;
-    border-color: #f64c72;
+    border-color: #2980B9; /* Verde Escuro (ajustado) */
     border-width: 2px;
     padding: 5px 10px;
     width: 90px;
 }
 
-button.voltar:hover{
-    background-color: #2f2fa2;
-    color: #f64c72;
-    font-size: 19px;
+button.voltar:hover {
+    background-color: #2980B9; /* Azul Escuro (ajustado) */
+    color: #FFFFFF;
     cursor: pointer;
+    border-color: #1ABC9C;
 }
 
-
-
 .nav_link {
-    color: rgba(255, 255, 255, 1);
+    color: #2C3E50; /* Cinza Escuro (ajustado) */
     font-size: 20px;
     border-width: 6px;
 }
+
 .nav_link:hover {
-    color: #ffffff;
+    color: #FFFFFF;
     border-style: solid;
     border-radius: 7px;
-    background-color: #f64c72;
+    background-color: #2980B9; /* Azul Escuro (ajustado) */
     font-size: 20px;
     border: none;
 }
 
 .active {
-    border-color: #f64c72;
+    border-color: #2980B9; /* Azul Escuro (ajustado) */
 }
 
 button.login {
     margin-top: -5px;
     font-size: 19px;
-    background-color: #f64c72;
-    color: #ffffff;
+    background-color: #1ABC9C; /* Verde Escuro (ajustado) */
+    color: #FFFFFF;
     border-radius: 7px;
     border-style: solid;
-    border-color: #f64c72;
+    border-color: #1ABC9C; /* Verde Escuro (ajustado) */
     border-width: 2px;
     padding: 5px 10px;
     width: 90px;
 }
 
-.login:hover {
-    background-color: #2f2fa2;
-    color: #f64c72;
-    font-size: 19px;
+button.login:hover {
+    background-color: #2980B9; /* Azul Escuro (ajustado) */
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -181,81 +191,96 @@ button.login {
     padding: 0 30px;
 }
 
-
-
 .section {
-    height: 200vh;
-    display:flow-root;
-    align-items:first center;
-    justify-content:center;
+    height: 500vh;
+    display: flow-root;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.sobre_imposto {
+    align-items: center;
+    .subtitulo_imposto {
+        margin: 10px;
+    }
+    .video_imposto1 {
+        align-items: center;
+        margin: 25px 40px 60px;
+    }
+    .subtitulo_imposto {
+        margin: 50px;
+    }
+    .video_imposto2 {
+        align-items: center;
+        margin: 60px;
+    }
+}
+
+h1.heading {
+    font-size: 1.9rem;
+    margin: 80px 0px 0px;
+    border: solid 2px;
+    border-color: #1ABC9C; /* Verde Escuro */
+    background-color: #1ABC9C;
 }
 
 .section:nth-child(1) {
-    background: #2f2fa24c;
+    background: #FFFFFF; /* Azul Claro (ajustado) */
 }
 
-.section:nth-child(2) {
-    background: #2f2fa2;
-    color: #ffffff;
-    text-align: left;
-    height: 20vh;
-}
-
-button.contato{
-    width: 100%;
-    background-color: #f64c72;
-    border: solid;
-    border-width: 2px;
-    border-color: #f64c72;
-    color: #ffffff;
-}
-
-
-
-button.github{
-    background-color: #2f2fa2;
+button.github {
+    background-color: #2980B9; /* Azul Escuro (ajustado) */
     border: solid;
     border-width: 2px;
     height: 34px;
-    border-color: #2f2fa2;
+    border-color: #2980B9; /* Azul Escuro (ajustado) */
     border-radius: 10px;
 }
 
-button.github:hover{
-    background-color: #f64c72;
-    border-color: #f64c72;
-
+button.github:hover {
+    background-color: #85C1E9; /* Verde Escuro */
+    border-color: #85C1E9;
+    cursor: pointer; /* Azul Claro (ajustado) */
 }
 
-a.email{
-    text-decoration:underline;
-}
-a.email:hover{
-    color: #f64c72;
+a.email {
+    text-decoration: underline;
 }
 
-h2.heading{
+h2.heading {
     text-align: center;
-    margin-top: 2px;
+    margin: 0px 0px 60px;
+    color: #2C3E50; /* Cinza Escuro (ajustado) */
 }
 
-div.informacao_contato{
-    display:flex;
+div.informacao_contato {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-div.informacao_conteudo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
+footer {
+    height: 13vh;
+    color: #2C3E50; /* Cinza Escuro */
+    text-align: center;
+    font-size: 0.9rem;
+    background: rgb(41, 127, 185); /* Branco */
 }
 
+.informacao_conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
 
-.heading {
-    font-size: 2rem;
+h2.heading {
+    font-size: 1.9rem;
+    margin: 0px 0px 0px;
+    border: solid 2px;
+    border-color: #1ABC9C; /* Verde Escuro */
+    background-color: #1ABC9C;
 }
 
 @media (max-width: 768px) {
@@ -264,15 +289,14 @@ div.informacao_conteudo{
         height: auto;
     }
 
-    header{
+    header {
         position: fixed;
         width: 100%;
-        background-color: #2f2fa2;
+        background-color: #2980B9; /* Azul Escuro (ajustado) */
         z-index: 1000;
         height: 10vh;
     }
 
-    
     .nav_list {
         display: flex;
         flex-direction: row;
@@ -280,11 +304,9 @@ div.informacao_conteudo{
         justify-content: space-evenly;
     }
 
-
-    .botoes{
+    .botoes {
         margin: 150px;
     }
-
 
     .nav_list.active {
         display: flex;
@@ -304,5 +326,4 @@ div.informacao_conteudo{
         text-align: center;
         margin-top: 10px;
     }
-
 }
